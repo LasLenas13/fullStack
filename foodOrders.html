@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./menu.css">
+</head>
+<header>
+    <h1>Only Wingz</h1>
+</header>
+<body>
+    <main>
+    <form id="complete-order">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="type Name please" name="name"  required>
+        <label for="meal">Meal:</label>
+        <input id="meal" type="text" placeholder="meal selection" name="meal" required>
+        <label for="side">Side:</label>
+        <input id="side" type="text" placeholder="type of side" name="side" required>
+
+        <label for="drinks">List of Our Drinks:</label>
+        <select name="drinks" id="drinks">
+            <option value="Coke">Coke</option>
+            <option value="Diet">Diet</option>
+            <option value="Lemonade">Lemonade</option>
+            <option value="Ice Tea">Ice Tea</option>
+          </select>
+          <div id="dining-opt">
+          <input type="radio" id="go" name="location" value="go">
+                <label for="go">To Go</label><br>
+            <input type="radio" id="css" name="location" value="stay">
+                <label for="stay">For Here</label><br>
+          <label for="pickUp">Pick-Up Time:</label>
+        </div>
+        <div id="pu-time">
+          <select name="drinks" id="drinks">
+              <option value="six">6pm</option>
+              <option value="seven">7pm</option>
+              <option value="eight">8pm</option>
+              <option value="nine">9pm</option>
+            </select>
+        </div>
+            <button id="order-sent" type="submit">Submit Order</button>
+    </form>
+</main>
+    <script src="./menu.js"></script>
+</body>
+</html>
